@@ -438,12 +438,7 @@
             margin-left: 0px;
         }
 
-        .auto-style36 {
-            height: 14px;
-            width: 83px;
-        }
-
-                               
+                                       
 
         #Password3 {
              width: 10cm;
@@ -489,6 +484,11 @@
             font-size: 12px;
         }
                    
+        .auto-style36 {
+            height: 14px;
+            width: 107px;
+        }
+                   
         </style>
     
 </head>
@@ -511,41 +511,51 @@
                                 <asp:TextBox ID="fn" runat="server" class="auto-style11" placeholder=" First Name" type="text"></asp:TextBox>
                             </td>
                             <td class="auto-style28" colspan="3">
-                                &nbsp;</td>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="fn" ErrorMessage="Must not be empty&lt;br&gt;" ForeColor="Red" ValidationGroup="valGroup1"></asp:RequiredFieldValidator>
+                            </td>
                         </tr>
                         <tr>
                             <td class="auto-style20">
                                 <asp:TextBox ID="sn" runat="server" class="auto-style11" placeholder=" Second Name" type="text"></asp:TextBox>
                             </td>
                             <td class="auto-style29" colspan="3">
-                                &nbsp;</td>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="sn" ErrorMessage="Must not be empty&lt;br&gt;" ForeColor="Red" ValidationGroup="valGroup1"></asp:RequiredFieldValidator>
+                            </td>
                         </tr>
                         <tr>
                             <td class="auto-style19">
                                 <asp:TextBox ID="em" runat="server" class="auto-style11" placeholder=" E-Mail" type="text"></asp:TextBox>
                             </td>
                             <td class="auto-style30" colspan="3">
-                                &nbsp;</td>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="em" ErrorMessage="Must not be empty&lt;br&gt;" ForeColor="Red" ValidationGroup="valGroup1"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="em" ErrorMessage="Write your valid email&lt;br&gt;" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="valGroup1"></asp:RegularExpressionValidator>
+                            </td>
                         </tr>
                         <tr>
                             <td class="auto-style32">
                                 <asp:TextBox ID="pw" runat="server" placeholder=" Password" type="password"></asp:TextBox>
                             </td>
                             <td class="auto-style33" colspan="3">
-                                &nbsp;</td>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="pw" ErrorMessage="Must not be empty&lt;br&gt;" ForeColor="Red" ValidationGroup="valGroup1"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="pw" ErrorMessage="Must be morethan 8 characters with numbers and lower case and upper case and special character" ForeColor="Red" ValidationExpression="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%?=*&amp;]).{8,20})" ValidationGroup="valGroup1"></asp:RegularExpressionValidator>
+                            </td>
                         </tr>
                         <tr>
                             <td class="auto-style22">
                                 <asp:TextBox ID="Password2" runat="server" placeholder=" Confirm Password" type="password"></asp:TextBox>
                             </td>
                             <td class="auto-style31" colspan="3">
-                                &nbsp;</td>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="Password2" ErrorMessage="Must not be empty&lt;br&gt;" ForeColor="Red" ValidationGroup="valGroup1"></asp:RequiredFieldValidator>
+                                <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="pw" ControlToValidate="Password2" ErrorMessage="not same Password" ForeColor="#CC0000"></asp:CompareValidator>
+                            </td>
                         </tr>
                         <tr>
                             <td class="auto-style22">
                                 <asp:TextBox ID="un" runat="server" class="auto-style11" placeholder=" UserName" type="text"></asp:TextBox>
                             </td>
-                            <td class="auto-style31" colspan="3">&nbsp;</td>
+                            <td class="auto-style31" colspan="3">
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="un" ErrorMessage="Must not be empty&lt;br&gt;" ForeColor="Red" ValidationGroup="valGroup1"></asp:RequiredFieldValidator>
+                            </td>
                         </tr>
                         <tr>
                             <td class="auto-style34">
@@ -569,7 +579,8 @@
                                 </asp:RadioButtonList>
                             </td>
                             <td class="auto-style27">
-                                &nbsp;</td>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="un" ErrorMessage="Must not be empty&lt;br&gt;" ForeColor="Red" ValidationGroup="valGroup1"></asp:RequiredFieldValidator>
+                            </td>
                         </tr>
                         <tr>
                             <td class="auto-style27">

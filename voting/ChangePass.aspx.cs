@@ -23,9 +23,9 @@ namespace voting
             string strUpd = "Update voter " + " SET pass = '" + Password1.Text + "'" + " WHERE u_name = '" + User.Text + "'" ;
             conn.Open();
             SqlCommand cmdUpd = new SqlCommand(strUpd, conn);
-            conn.Open();
-            cmdUpd.ExecuteNonQuery();
             
+            cmdUpd.ExecuteNonQuery();
+            Response.Redirect("~/voter.aspx");
             conn.Close();
            
           

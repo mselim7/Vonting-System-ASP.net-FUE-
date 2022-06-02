@@ -341,13 +341,17 @@
                             <td class="auto-style26">
                                 <asp:TextBox ID="Password1" runat="server" class="auto-style21" placeholder=" New Password" type="password"></asp:TextBox>
                             </td>
-                            <td class="auto-style8">&nbsp;</td>
+                            <td class="auto-style8">
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="Password1" ErrorMessage="Must be morethan 8 characters with numbers and lower case and upper case and special character" ForeColor="Red" ValidationExpression="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%?=*&amp;]).{8,20})" ValidationGroup="valGroup1"></asp:RegularExpressionValidator>
+                            </td>
                         </tr>
                         <tr>
                             <td class="auto-style27">
                                 <asp:TextBox ID="Password2" runat="server" class="auto-style22" placeholder=" Confirm New Password" type="password"></asp:TextBox>
                             </td>
-                            <td class="auto-style7">&nbsp;</td>
+                            <td class="auto-style7">
+                                <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="Password1" ControlToValidate="Password2" ErrorMessage="not same Password" ForeColor="#CC0000"></asp:CompareValidator>
+                            </td>
                         </tr>
                         <tr>
                             <td class="auto-style25">
