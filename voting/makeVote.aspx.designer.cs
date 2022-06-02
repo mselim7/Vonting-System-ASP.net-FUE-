@@ -15,6 +15,24 @@ namespace voting
     {
 
         /// <summary>
+        /// label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label;
+
+        /// <summary>
+        /// id control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox id;
+
+        /// <summary>
         /// Label9 control.
         /// </summary>
         /// <remarks>
@@ -24,13 +42,13 @@ namespace voting
         protected global::System.Web.UI.WebControls.Label Label9;
 
         /// <summary>
-        /// TextBox1 control.
+        /// q control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox q;
 
         /// <summary>
         /// Label10 control.
@@ -42,13 +60,13 @@ namespace voting
         protected global::System.Web.UI.WebControls.Label Label10;
 
         /// <summary>
-        /// TextBox2 control.
+        /// ch1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox ch1;
 
         /// <summary>
         /// Label11 control.
@@ -60,12 +78,21 @@ namespace voting
         protected global::System.Web.UI.WebControls.Label Label11;
 
         /// <summary>
-        /// TextBox3 control.
+        /// ch2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox ch2;
+
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

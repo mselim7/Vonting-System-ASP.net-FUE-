@@ -15,9 +15,28 @@ namespace voting
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            string ques = "";
+            string ch1 = "";
+            string ch2 = "";
+           
+
+
+
+            if (Request.Cookies["quesInfo"] != null)
+            {
+
+
+                ques = Request.Cookies["quesInfo"].Values["Q"];
+                ch1 = Request.Cookies["quesInfo"].Values["ch1"];
+                ch2 = Request.Cookies["quesInfo"].Values["ch2"];
+               
+            }
+            que.Text = ques;
+           CheckBox1.Text = ch1;
+            CheckBox2.Text = ch2;
             
         }
 
-
-    }
+      
+            }
 }

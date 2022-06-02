@@ -166,7 +166,6 @@
                     <td class="auto-style3" colspan="2">
                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/voter.aspx">Home</asp:HyperLink>
                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ChangePass.aspx">Change Password</asp:HyperLink>
-                        <asp:HyperLink ID="HyperLink3" runat="server" Target="_search" NavigateUrl="~/Vote.aspx">Vote</asp:HyperLink>
                         <asp:HyperLink ID="HyperLink4" runat="server" Target="_search" NavigateUrl="~/signin.aspx">Log Out</asp:HyperLink>
                     </td>
                 </tr>
@@ -205,7 +204,10 @@
                 </tr>
                 <tr>
                     <td class="auto-style2" colspan="2">
-                        &nbsp;</td>
+    <asp:Label ID="Label1" runat="server" Text="enter the id of the vote :"></asp:Label>
+    <asp:TextBox ID="idvot" runat="server"></asp:TextBox>
+                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Vote" />
+                    </td>
                 </tr>
             </table>
             <br />
