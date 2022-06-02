@@ -37,7 +37,24 @@ namespace voting
                 reader = cmdSelect.ExecuteReader();
                 if (reader.Read())
                 {
-                    //string Email = (string)reader.GetValue(3);
+                    string name = (string)reader.GetValue(1);
+                    string lname = (string)reader.GetValue(2);
+                    string id = (string)reader.GetValue(0);
+                    string email = (string)reader.GetValue(5);
+                    string age = (string)reader.GetValue(4);
+                    HttpCookie coki = new HttpCookie("userInfo");
+                    coki.Values.Add("userN",user.Text);
+                    coki.Values.Add("f_name", name);
+                    coki.Values.Add("S_name", lname);
+                    //coki.Values.Add("id", id);
+                    coki.Values.Add("email", email);
+                    coki.Values.Add("age", age);
+
+
+                    coki.Values.Add("Pass",pass.Text);
+
+                    coki.Expires = DateTime.Now.AddDays(3);
+                    Response.Cookies.Add(coki);
                     Response.Redirect("~/Admin.aspx");
                         
                 }
@@ -59,7 +76,22 @@ namespace voting
                 reader2 = cmdSelect2.ExecuteReader();
                 if (reader2.Read())
                 {
-                    //string Email = (string)reader2.GetValue(3);
+                    string name = (string)reader2.GetValue(0);
+                    string lname = (string)reader2.GetValue(1);
+                    string id = (string)reader2.GetValue(4);
+                    string email = (string)reader2.GetValue(2);
+                    string age = (string)reader2.GetValue(6);
+                    HttpCookie coki = new HttpCookie("userInfo");
+                    coki.Values.Add("userN", user.Text);
+                    coki.Values.Add("f_name", name);
+                    coki.Values.Add("second_name", lname);
+                    coki.Values.Add("u_name", id);
+                    coki.Values.Add("email", email);
+                    coki.Values.Add("bd", age);
+                    coki.Values.Add("pass", pass.Text);
+
+                    coki.Expires = DateTime.Now.AddDays(3);
+                    Response.Cookies.Add(coki);
                     Response.Redirect("~/voter.aspx");
                     
                 }

@@ -78,6 +78,7 @@
     <Content Include="Admin.aspx" />
     <Content Include="voter.aspx" />
     <Content Include="Vote.aspx" />
+    <Content Include="makeVote.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="adminMaster.Master.cs">
@@ -136,6 +137,13 @@
     </Compile>
     <Compile Include="Vote.aspx.designer.cs">
       <DependentUpon>Vote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="makeVote.aspx.cs">
+      <DependentUpon>makeVote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="makeVote.aspx.designer.cs">
+      <DependentUpon>makeVote.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

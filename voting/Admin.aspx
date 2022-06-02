@@ -2,6 +2,25 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style type="text/css">
+        #Label10 {
+            color: black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            font-family: "Avenir Next", sans-serif;
+            font-weight: 900;
+            font-size: 32px;
+            text-transform: uppercase;
+            font-style: italic;
+            letter-spacing: 0.05em;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+    <asp:Label ID="Label10" runat="server" Text="All the recent users :" CssClass="auto-style8"></asp:Label>
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="u_name" DataSourceID="SqlDataSource1">
     <Columns>
         <asp:BoundField DataField="f_name" HeaderText="f_name" SortExpression="f_name" />

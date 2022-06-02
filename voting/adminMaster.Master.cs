@@ -12,26 +12,30 @@ namespace voting
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|System.mdf;Integrated Security=True";
+
+            string name = "";
+            string lname = "";
+            string id = "";
+            string email = "";
+            string age = "";
 
 
-            string strSelect = "SELECT * FROM admin ";
 
-                  
-                SqlCommand cmdSelect = new SqlCommand(strSelect, conn);
-
-                SqlDataReader reader;
-
-            
-            conn.Open();
-            reader = cmdSelect.ExecuteReader();
-            if (reader.Read())
+            if (Request.Cookies["userInfo"] != null)
             {
-                lb3.Text = (string)reader.GetValue(1) +" "+(string)reader.GetValue(2);
-                lb5.Text = (string)reader.GetValue(0);
-                lb7.Text = (string)reader.GetValue(5);
-                lb9.Text = (string)reader.GetValue(4);
+                
+
+                name = Request.Cookies["userInfo"].Values["f_name"];
+                lname = Request.Cookies["userInfo"].Values["S_name"];
+                id = Request.Cookies["userInfo"].Values["userN"];
+                email = Request.Cookies["userInfo"].Values["email"];
+                age = Request.Cookies["userInfo"].Values["age"];
+
+                lb3.Text = name + " " + lname;
+                lb5.Text = id;
+                lb7.Text = email;
+                lb9.Text = age;
+
             }
         }
     }

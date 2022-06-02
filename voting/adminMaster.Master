@@ -69,23 +69,7 @@
         .auto-style7 {
             height: 148px;
         }
-        #Label10 {
-           
-            color: black;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            font-family: "Avenir Next", sans-serif;
-            font-weight: 900;
-            font-size: 32px;
-            text-transform: uppercase;
-            font-style: italic;
-            letter-spacing: 0.05em;
-            display: inline-block;
-            margin-top:20px;
-        }
+       
     </style>
 </head>
 <body>
@@ -94,9 +78,9 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style3" colspan="2">
-                        <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>
-                        <asp:HyperLink ID="HyperLink2" runat="server">Make Vote</asp:HyperLink>
-                        <asp:HyperLink ID="HyperLink3" runat="server" Target="_search">Log Out</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin.aspx">Home</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/makeVote.aspx">Make Vote</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink3" runat="server" Target="_search" NavigateUrl="~/signin.aspx">Log Out</asp:HyperLink>
                     </td>
                 </tr>
                 <tr>
@@ -134,8 +118,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2" colspan="2">
-                        <asp:Label ID="Label10" runat="server" Text="All the recent users :"></asp:Label>
-                        a</td>
+                        &nbsp;</td>
                 </tr>
             </table>
             <br />
