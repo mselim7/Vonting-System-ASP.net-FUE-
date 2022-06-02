@@ -11,16 +11,7 @@ namespace voting
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string name = "";
-            string lname = "";
-            if (Request.Cookies["userInfo"] != null)
-            {
-
-
-                name = Request.Cookies["userInfo"].Values["f_name"];
-                lname = Request.Cookies["userInfo"].Values["second_name"];
-            }
-            Label9.Text = "Welcome " + name + " " + lname;
+            
         }
     }
 }

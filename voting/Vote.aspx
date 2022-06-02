@@ -2,8 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
-    <asp:Label ID="Label9" runat="server" Text="Label"></asp:Label>
-    <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <br />
+    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
     <br />
     <asp:CheckBox ID="CheckBox1" runat="server"  />
 &nbsp;

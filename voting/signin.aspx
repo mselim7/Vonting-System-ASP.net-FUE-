@@ -326,7 +326,7 @@
                                     <asp:DropDownList  ID="ss1" runat="server" class="auto-style18" name="D1">
                                         <asp:ListItem>Admin</asp:ListItem>
                                         <asp:ListItem>Voter</asp:ListItem>
-                                        <asp:ListItem>Candidate</asp:ListItem>
+                                        
                                         </asp:DropDownList>
                                        
                                     
