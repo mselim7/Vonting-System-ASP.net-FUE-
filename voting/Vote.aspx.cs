@@ -18,8 +18,9 @@ namespace voting
             string ques = "";
             string ch1 = "";
             string ch2 = "";
-           
-
+            string r1 = "";
+            string r2 = "";
+            
 
 
             if (Request.Cookies["quesInfo"] != null)
@@ -29,14 +30,21 @@ namespace voting
                 ques = Request.Cookies["quesInfo"].Values["Q"];
                 ch1 = Request.Cookies["quesInfo"].Values["ch1"];
                 ch2 = Request.Cookies["quesInfo"].Values["ch2"];
+                r1 = Request.Cookies["quesInfo"].Values["r1"];
+                r2 = Request.Cookies["quesInfo"].Values["r2"];
                
+
             }
             que.Text = ques;
            CheckBox1.Text = ch1;
             CheckBox2.Text = ch2;
+
             
         }
 
-      
-            }
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+    }
 }

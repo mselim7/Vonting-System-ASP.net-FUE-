@@ -10,7 +10,7 @@
     <br />
     <asp:CheckBox ID="CheckBox2" runat="server" Text=""  />
 <br />
-<asp:Button ID="Button1" runat="server" Text="Button" />
+<asp:Button ID="Button1" runat="server" Text="submit" OnClick="Button1_Click" />
 <br />
 </asp:Content>
 
