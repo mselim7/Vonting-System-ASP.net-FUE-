@@ -102,6 +102,7 @@
       <HintPath>packages\System.Threading.Tasks.Dataflow.6.0.0\lib\net461\System.Threading.Tasks.Dataflow.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -140,6 +141,9 @@
     <Content Include="voter.aspx" />
     <Content Include="Vote.aspx" />
     <Content Include="makeVote.aspx" />
+    <Content Include="Result.aspx" />
+    <Content Include="Resultv.aspx" />
+    <Content Include="EDIT.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="adminMaster.Master.cs">
@@ -205,6 +209,27 @@
     </Compile>
     <Compile Include="makeVote.aspx.designer.cs">
       <DependentUpon>makeVote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Result.aspx.cs">
+      <DependentUpon>Result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Result.aspx.designer.cs">
+      <DependentUpon>Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultv.aspx.cs">
+      <DependentUpon>Resultv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultv.aspx.designer.cs">
+      <DependentUpon>Resultv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EDIT.aspx.cs">
+      <DependentUpon>EDIT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDIT.aspx.designer.cs">
+      <DependentUpon>EDIT.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

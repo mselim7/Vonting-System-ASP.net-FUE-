@@ -13,9 +13,25 @@
             width: 100%;
             height: 5px;
         }
+        .auto-style2 {
+            height: 160px;
+        }
         .auto-style3 {
             height: 56px;
             background-color :forestgreen;
+        }
+        .auto-style5 {
+            height: 148px;
+            width: 7px;
+        }
+           .auto-style6 {
+            width: 100%;
+            height: 173px;
+        }
+         
+           
+        .auto-style7 {
+            height: 148px;
         }
          #HyperLink1{
             
@@ -24,6 +40,12 @@
            font-family: "Avenir Next", sans-serif;
            font-weight: 900;
            font-size: 12px;
+        }
+         #HyperLink1:hover{
+
+            background-color:black;
+            color: white;
+                      
         }
                 
         #HyperLink2{
@@ -34,7 +56,28 @@
            font-weight: 900;
            font-size: 12px;
         }
-        #HyperLink3{
+       
+        #HyperLink2:hover{
+           background-color:black;
+            color: white;
+        }
+        
+      #HyperLink3{
+           
+             padding:20px 30px 20px 20px;
+           color: black;
+           font-family: "Avenir Next", sans-serif;
+           font-weight: 900;
+           font-size: 12px;
+        }
+        
+         
+        #HyperLink3:hover{
+            background-color:black;
+            color: white;
+        }
+      
+        #HyperLink4{
            
             padding:20px 30px 20px 20px;
            color: black;
@@ -42,14 +85,26 @@
            font-weight: 900;
            font-size: 12px;
         }
-        .auto-style6 {
-            width: 100%;
-            height: 173px;
+                    
+      #HyperLink4:hover{
+            background-color:black;
+            color: white;
         }
-         .auto-style2 {
-            height: 160px;
+                
+                  
+        #HyperLink5{
+           
+           padding:20px 30px 20px 20px;
+           color: black;
+           font-family: "Avenir Next", sans-serif;
+           font-weight: 900;
+           font-size: 12px;
         }
-        #Label10 {
+        #HyperLink5:hover{
+            background-color:black;
+            color: white;
+        }
+         #Label10 {
            
             color: black;
             text-align: center;
@@ -66,96 +121,21 @@
             display: inline-block;
             margin-top:20px;
         }
-            
-        #HyperLink3{
-           
-             padding:20px 30px 20px 20px;
-           color: black;
-           font-family: "Avenir Next", sans-serif;
-           font-weight: 900;
-           font-size: 12px;
-        }
-                
-        #HyperLink4{
-           
-             padding:20px 30px 20px 20px;
-           color: black;
-           font-family: "Avenir Next", sans-serif;
-           font-weight: 900;
-           font-size: 12px;
-        }
-         #HyperLink1{
-            
-           padding:20px 30px 20px 20px;
-           color: black;
-           font-family: "Avenir Next", sans-serif;
-           font-weight: 900;
-           font-size: 12px;
-        }
-        #HyperLink1:hover{
-
-            background-color:black;
-            color: white;
-                      
-        }
-        
-        #HyperLink2{
-           
-             padding:20px 30px 20px 20px;
-           color: black;
-           font-family: "Avenir Next", sans-serif;
-           font-weight: 900;
-           font-size: 12px;
-        }
-        #HyperLink2:hover{
-           background-color:black;
-            color: white;
-        }
-        #HyperLink3{
-           
-            padding:20px 30px 20px 20px;
-           color: black;
-           font-family: "Avenir Next", sans-serif;
-           font-weight: 900;
-           font-size: 12px;
-        }
-        #HyperLink3:hover{
-            background-color:black;
-            color: white;
-        }
-        .auto-style5 {
-            height: 148px;
-            width: 7px;
-        }
-        .auto-style7 {
-            height: 148px;
-        }
-        #HyperLink4{
-           
-            padding:20px 30px 20px 20px;
-           color: black;
-           font-family: "Avenir Next", sans-serif;
-           font-weight: 900;
-           font-size: 12px;
-        }
                     
-        #HyperLink4{
-           
-             padding:20px 30px 20px 20px;
-           color: black;
-           font-family: "Avenir Next", sans-serif;
-           font-weight: 900;
-           font-size: 12px;
-        }
+       
                 
-        #HyperLink4{
+       
+        #HyperLink6{
            
-            padding:20px 30px 20px 20px;
            color: black;
            font-family: "Avenir Next", sans-serif;
            font-weight: 900;
            font-size: 12px;
         }
+                            
+       
+                
+       
         </style>
 </head>
 <body>
@@ -167,11 +147,13 @@
                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/voter.aspx">Home</asp:HyperLink>
                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ChangePass.aspx">Change Password</asp:HyperLink>
                         <asp:HyperLink ID="HyperLink4" runat="server" Target="_search" NavigateUrl="~/signin.aspx">Log Out</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink5" runat="server" Target="_search" NavigateUrl="~/Resultv.aspx">Result</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink6" runat="server" Target="_search" NavigateUrl="~/EDIT.aspx">EDIT profile</asp:HyperLink>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style5">
-                        <asp:Image ID="Image1" runat="server" Height="181px" Width="233px" />
+                        <asp:Image ID="Image1" runat="server" Height="181px" Width="205px" />
                     </td>
                     <td class="auto-style7">
                         <table class="auto-style6">

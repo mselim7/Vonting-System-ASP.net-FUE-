@@ -307,6 +307,16 @@
         }
         
                
+        .auto-style28 {
+            width: 477px;
+            height: 61px;
+        }
+        .auto-style29 {
+            width: 643px;
+            height: 61px;
+        }
+        
+               
         </style>
     
 </head>
@@ -326,10 +336,10 @@
                             <td class="auto-style23">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td class="auto-style25">
+                            <td class="auto-style28">
                                 <asp:TextBox ID="User" runat="server" class="auto-style21" placeholder=" User Name" type="Text"></asp:TextBox>
                             </td>
-                            <td class="auto-style20">&nbsp;</td>
+                            <td class="auto-style29"></td>
                         </tr>
                         <tr>
                             <td class="auto-style26">

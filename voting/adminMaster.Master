@@ -27,6 +27,9 @@
             width: 100%;
             height: 173px;
         }
+         .auto-style7 {
+            height: 148px;
+        }
          #HyperLink1{
             
            padding:20px 30px 20px 20px;
@@ -66,10 +69,21 @@
             background-color:black;
             color: white;
         }
-        .auto-style7 {
-            height: 148px;
-        }
        
+       
+        #HyperLink4{
+           
+            //padding:20px 30px 20px 20px;
+           color: black;
+           font-family: "Avenir Next", sans-serif;
+           font-weight: 900;
+           font-size: 12px;
+        }
+        #HyperLink4:hover{
+            background-color:black;
+            color: white;
+        }
+               
     </style>
 </head>
 <body>
@@ -81,6 +95,7 @@
                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin.aspx">Home</asp:HyperLink>
                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/makeVote.aspx">Make Vote</asp:HyperLink>
                         <asp:HyperLink ID="HyperLink3" runat="server" Target="_search" NavigateUrl="~/signin.aspx">Log Out</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink4" runat="server" Target="_search" NavigateUrl="~/Result.aspx">Result</asp:HyperLink>
                     </td>
                 </tr>
                 <tr>
